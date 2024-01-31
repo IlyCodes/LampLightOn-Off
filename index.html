@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f7f7f7;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img src="./imgs/off.jpeg" id="img"><br><br>
+        <button onclick="on()" class="btn btn-outline-success m-3">ON</button>
+        <button onclick="off()"class="btn btn-outline-danger m-3">OFF</button>
+    </div>
+
+    <script>
+        function on(){
+            document.getElementById('img').src = "./imgs/al.jpeg";
+        }
+        function off(){
+            document.getElementById('img').src = "./imgs/off.jpeg";
+
+        }
+    </script>
+    
+</body>
+</html>
